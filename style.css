@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+:root{
+    --color-10: #f9fafd;
+    --color-20: #f3f5fa;
+    --color-40: #ecf0f8;
+    --color-60: #e6ebf6;
+    --color-80: #e0e6f3;
+    --color-100: #e0e6f3;
+    --color-150: #cdd7ed;
+    --color-200: #b4c3e4;
+    --color-300: #8fa5d6;
+    --color-400: #6a87c9;
+    --color-500: #4469bb;
+    --color-600: #375496;
+    --color-700: #293f71;
+    --color-800: #1f2f55;
+    --color-850: #172340;
+}
+
+body {
+    background-color: var(--color-200);
+    -webkit-font-smoothing: auto;
+}
+
+.top {
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    display: grid;
+    background: var(--color-10);    
+}
+
+.container {
+    width: 90%;
+    display: flex;
+}
+
+h1 { 
+    font: 600 2.5rem 'Poppins', sans-serif;
+    color: var(--color-850);    
+}
+
+.name {
+    margin-top: 2.5rem;
+}
+
+.name p {
+    font: 400 1.4rem 'Poppins', sans-serif;
+    color: var(--color-800);
+}
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    padding: 2.5rem 1rem 1rem 2.5rem;
+    background-color: var(--color-850);
+    clip-path: circle(50% at 50% 50%);
+    margin-top: 5rem;
+}
+
+.circle p { 
+    color: var(--color-10);
+    font: 16 1.2rem 'Courgette', sans-serif;
+}
+
+.content {
+    width: 90%;
+    background-color: var(--color-10);
+    margin: 0 auto;  
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.content .container-left section {
+    background-color: var(--color-10);
+    height: 10rem;  
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.content section.right {
+    background-color: var(--color-10);
+    background-color: pink;
+}
+
+.description {
+}
+
+.text {
+    border-left: thin dashed rgba(0, 0, 0, 0.581);
+}
+
+.text::before {
+    content: '';
+    width: 1.25rem;
+    height: 1.25rem;
+    background: var(--color-800);
+    position: absolute;
+    margin-left: -.623rem;
+    margin-top: -.45rem;
+    clip-path: circle();
+}
+
+.text p {
+    padding: 2rem;
+}
+
